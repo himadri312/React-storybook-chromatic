@@ -38,12 +38,14 @@ export const Button = styled.button`
         border: 1px solid black;
         background-color: red;
         color: black;
+        padding: 20px;
       `;
     } else if (variant === "secondary" && !disabled) {
       return css`
         border: 1px solid black;
         background-color: green;
         color: grey;
+        padding: 50px;
       `;
     }
   }}
