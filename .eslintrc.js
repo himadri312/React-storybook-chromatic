@@ -3,7 +3,11 @@ module.exports = {
     browser: true,
     es2020: true
   },
-  extends: ["airbnb", "plugin:prettier/recommended"],
+  extends: [
+    "airbnb",
+    "plugin:prettier/recommended",
+    "plugin:storybook/recommended"
+  ],
   parserOptions: {
     ecmaFeatures: {
       jsx: true

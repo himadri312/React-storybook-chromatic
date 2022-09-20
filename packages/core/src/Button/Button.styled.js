@@ -18,18 +18,10 @@ export const Button = styled.button`
     font-weight: 600;
   }
 
-  &:hover {
-    ${({ disabled, theme }) =>
-      !disabled &&
-      css`
-        box-shadow: ${theme.shadows.md()};
-      `}
-  }
-
+  &:hover,
   &:active,
   &:focus {
     outline: none;
-    box-shadow: ${({ theme }) => theme.shadows.sm()};
   }
 
   &:disabled,
@@ -40,18 +32,18 @@ export const Button = styled.button`
     border: 1px solid #a5abac;
   }
 
-  ${({ variant, theme, disabled }) => {
+  ${({ variant, disabled }) => {
     if (variant === "primary" && !disabled) {
       return css`
-        border: 1px solid ${theme.colors.yellowSecondary};
-        background-color: ${theme.colors.yellowPrimary};
-        color: ${theme.colors.black};
+        border: 1px solid black;
+        background-color: yellow;
+        color: black;
       `;
     } else if (variant === "secondary" && !disabled) {
       return css`
-        border: 1px solid ${theme.colors.bluePrimary};
+        border: 1px solid blue;
         background-color: #fff;
-        color: ${theme.colors.blueSecondary};
+        color: grey;
       `;
     }
   }}
