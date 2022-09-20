@@ -42,7 +42,7 @@ export const Button = styled.button`
     } else if (variant === "secondary" && !disabled) {
       return css`
         border: 1px solid black;
-        background-color: green;
+        background-color: yellow;
         color: grey;
       `;
     }
