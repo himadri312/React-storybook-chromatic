@@ -12,13 +12,12 @@
     "bootstrap": "lerna bootstrap --use-workspaces",
     "build": "lerna exec --parallel -- babel --root-mode upward src -d lib --ignore **/*.stories.js,**/*.spec.js",
     "coverage": "jest --coverage",
-    "deploy-storybook": "storybook-to-aws-s3 --bucket-path=designsystem.frontend.quero/",
-    "dev": "start-storybook -p 5555",
-    "now-build": "build-storybook -c .storybook -o public",
+    "start-storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
     "prettier": "prettier --write \"**/*.{js,json,md,yml}\"",
     "lerna-publish": "lerna publish",
-    "test": "yarn build && yarn coverage",
-    "unit": "jest"
+    "unit": "jest",
+    "chromatic": "npx chromatic --project-token=CHROMATIC_PROJECT_TOKEN"
   },
   "husky": {
     "hooks": {
@@ -36,16 +35,23 @@
     "@babel/core": "^7.8.4",
     "@babel/preset-env": "^7.8.4",
     "@babel/preset-react": "^7.8.3",
-    "@storybook/addon-docs": "^5.3.13",
-    "@storybook/addon-info": "5.3.13",
-    "@storybook/react": "^5.3.13",
-    "@storybook/storybook-deployer": "^2.8.2",
+    "@storybook/addon-actions": "^6.5.12",
+    "@storybook/addon-docs": "^6.5.12",
+    "@storybook/addon-essentials": "^6.5.12",
+    "@storybook/addon-links": "^6.5.12",
+    "@storybook/react": "^6.5.12",
+    "@storybook/builder-webpack5": "^6.5.12",
+    "@storybook/manager-webpack5": "^6.5.12",
     "babel-core": "7.0.0-bridge.0",
     "babel-jest": "^25.1.0",
     "babel-loader": "^8.0.6",
     "babel-plugin-styled-components": "^1.10.7",
+    "chromatic": "^6.9.0",
     "eslint": "6.8.0",
     "eslint-config-get-off-my-lawn": "5.0.1",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.20.5",
     "husky": "4.0.0",
     "jest": "^25.1.0",
     "jest-haste-map": "^25.1.0",
@@ -63,13 +69,13 @@
     "stylelint-config-get-off-my-lawn": "^2.0.0",
     "stylelint-config-styled-components": "^0.1.1",
     "stylelint-processor-styled-components": "^1.10.0",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-prettier": "^3.1.4",
-    "eslint-plugin-react": "^7.20.5",
-    "webpack": "^4.41.6"
+    "webpack": "^5.74.0"
   },
   "dependencies": {
     "react-dropdown-select": "^4.4.2",
     "styled-icons": "^10.14.1"
-  }
+  },
+  "version": "",
+  "readme": "ERROR: No README data found!",
+  "_id": "root@"
 }

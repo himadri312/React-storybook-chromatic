@@ -13,6 +13,10 @@
   "directories": {
     "lib": "lib"
   },
+  "scripts": {
+    "storybook": "start-storybook -p 5556",
+    "build-storybook": "build-storybook"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/himadri312/React-storybook-chromatic.git",
