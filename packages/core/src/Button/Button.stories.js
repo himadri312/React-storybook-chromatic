@@ -7,8 +7,10 @@ export default {
   title: "Core|Button"
 };
 
-export const primary = () => <Button>{"Button"}</Button>;
+export const primary = () => <Button>{"Primary Button"}</Button>;
 
-export const secondary = () => <Button variant="secondary">{"Button"}</Button>;
+export const secondary = () => (
+  <Button variant="secondary">{"Secondary Button"}</Button>
+);
 
 export const disabled = () => <Button disabled>{"Button"}</Button>;
