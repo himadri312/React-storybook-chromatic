@@ -36,13 +36,13 @@ export const Button = styled.button`
     if (variant === "primary" && !disabled) {
       return css`
         border: 1px solid black;
-        background-color: yellow;
+        background-color: red;
         color: black;
       `;
     } else if (variant === "secondary" && !disabled) {
       return css`
         border: 1px solid blue;
-        background-color: #fff;
+        background-color: yellow;
         color: grey;
       `;
     }
