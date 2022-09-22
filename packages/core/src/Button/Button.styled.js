@@ -35,7 +35,7 @@ export const Button = styled.button`
   ${({ variant, disabled }) => {
     if (variant === "primary" && !disabled) {
       return css`
-        border: 1px solid yellow;
+        border: 1px solid black;
         background-color: red;
         color: black;
         padding: 20px;
