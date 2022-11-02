@@ -5,7 +5,6 @@ export const Button = styled.button`
   &:link,
   &:visited {
     text-decoration: none;
-    padding: 0 20px;
     display: inline-block;
     transition: all 0.2s;
     margin: 5px;
@@ -14,7 +13,6 @@ export const Button = styled.button`
     justify-content: center;
     height: 42px;
     font-size: 14px;
-    border-radius: 5px;
     font-weight: 600;
   }
 
@@ -29,24 +27,20 @@ export const Button = styled.button`
     background-color: #c9cdce;
     color: #80898b;
     cursor: not-allowed;
-    border: 1px solid #a5abac;
   }
 
   ${({ variant, disabled }) => {
     if (variant === "primary" && !disabled) {
       return css`
-        border: 5px solid black;
-        border-radius: 30px;
-        background-color: red;
-        color: black;
-        padding: 20px;
+        border: 1px solid black;
+        background-color: green;
+        padding: 10px;
       `;
     } else if (variant === "secondary" && !disabled) {
       return css`
-        border: 5px solid black;
-        background-color: green;
-        color: black;
-        padding: 50px;
+        border: 1px solid black;
+        background-color: orange;
+        padding: 10px;
       `;
     }
   }}
