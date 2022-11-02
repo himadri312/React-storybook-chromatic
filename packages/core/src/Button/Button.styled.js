@@ -32,13 +32,13 @@ export const Button = styled.button`
   ${({ variant, disabled }) => {
     if (variant === "primary" && !disabled) {
       return css`
-        border: 1px solid black;
+        border: 5px solid black;
         background-color: green;
         padding: 10px;
       `;
     } else if (variant === "secondary" && !disabled) {
       return css`
-        border: 1px solid black;
+        border: 5px solid black;
         background-color: orange;
         padding: 10px;
       `;
