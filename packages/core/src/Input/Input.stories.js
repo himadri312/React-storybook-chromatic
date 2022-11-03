@@ -4,7 +4,7 @@ import Input from ".";
 
 export default {
   component: Input,
-  title: "Form|Input"
+  title: "Core|Input"
 };
 
 console.log("Input Stories");
