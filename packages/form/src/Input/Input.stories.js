@@ -7,8 +7,6 @@ export default {
   title: "Form|Input"
 };
 
-console.log("Input Stories");
-
 export const placeholder = () => (
   <Input id="email" label="Email" placeholder="user@gmail.com" />
 );
