@@ -3,6 +3,8 @@ import React from "react";
 // import { spacing } from '@joaowillamy-test-quero/theme';
 import PropTypes from "prop-types";
 
+console.log('Form')
+
 const StyledContainer = styled.div`
   width: 100%;
 `;
@@ -15,6 +17,45 @@ const StyledLabel = styled.label`
 `;
 
 const StyledInput = styled.input`
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-shadow: none;
+  box-sizing: border-box;
+  caret-color: #000;
+  color: #000;
+  display: block;
+  font-size: 14px;
+  height: 40px;
+  line-height: 26px;
+  padding: 10px;
+  width: 100%;
+
+  ::placeholder {
+    color: #999;
+  }
+
+  ${props =>
+    props.disabled &&
+    css`
+      color: #999999;
+      background-color: #fafafa;
+      cursor: not-allowed;
+    `}
+`;
+
+const StyledContainer1 = styled.div`
+  width: 100%;
+`;
+
+const StyledLabel1 = styled.label`
+  color: #868686;
+  font-family: "Fira Sans";
+  font-size: 0.8rem;
+  text-transform: uppercase;
+`;
+
+const StyledInput1 = styled.input`
   background-color: transparent;
   border-radius: 4px;
   border: 1px solid #ccc;
