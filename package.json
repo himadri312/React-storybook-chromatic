@@ -16,8 +16,7 @@
     "build-storybook": "build-storybook",
     "prettier": "prettier --write \"**/*.{js,json,md,yml}\"",
     "lerna-publish": "lerna publish",
-    "unit": "jest",
-    "chromatic": "chromatic --exit-zero-on-changes"
+    "unit": "jest"
   },
   "husky": {
     "hooks": {
